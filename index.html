@@ -5,34 +5,221 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple todo project</title>
-    <link rel="stylesheet" href="practic.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <title>Hello world || Mojahid</title>
+    <link rel="stylesheet" href="stylel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <section id="app">
-        <!-- app head -->
-        <div class="today">
-            <h1 >Today</h1>
+
+    <nav>
+        <div class="pages">
+            <a class="a" href="#home">Home</a>
+            <a class="a" href="#">Portfolio</a>
+            <a class="a" href="#contact">Contact</a>
+            <a href="https://github.com/akmojahid/akmojahid" target="_blank" class="a btn github">Github</a>
         </div>
-        <!-- making inpupt area to make a todo -->
-        <div class="create-todo">
-            <input type="text" placeholder="What you want to do?" name="todo-name" id="todo-name">
-            <textarea placeholder="details : when, where, how?" id="todo-details"></textarea>
-            <input type="button" value="Create" name="create-todo" id="create-todo">
+        <div class="logo">
+            <img src="./img/logo.png" alt="myLogo">
         </div>
-        <!-- todo list -->
-        <div class="all-todo">
-            <!-- javascript will add Elements -->
-           
+    </nav>
+
+    <section id="home">
+
+        <div class="home-img">
+            <img src="./img/home-img.png" alt="website">
         </div>
 
+        <div class="home-text">
+            <h1>john<wbr> david</h1>
+            <h5>web developer</h5>
+            <br>
+            <input type="button" value="Reach out" class="btn home-btn">
+        </div>
     </section>
 
-    <script src="./main.js"></script>
+    <section id="skill">
+        <div class="skill-text">
+            <h5>What i can do</h5>
+            <h2>Skills & <br> proficiencies</h2>
+        </div>
+        <div class="skill-board">
+            <div class="cms-skill">
+                <h1>cms management</h1>
+                <hr class="hr">
+                <div class="skill-bar-name">Wordpress <br>
+                    <div class="skill-bar">
+                        <div id="wordpress"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-name">Shopify <br>
+                    <div class="skill-bar">
+                        <div id="shopify"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-name">Wix <br>
+                    <div class="skill-bar">
+                        <div id="wix"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cms-skill">
+                <h1>Web Development</h1>
+                <hr class="hr">
+
+                <div class="skill-bar-name">Javascript <br>
+                    <div class="skill-bar">
+                        <div id="wix"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-name">PHP<br>
+                    <div class="skill-bar">
+                        <div id="wordpress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="service">
+        <div class="service-head">
+            <h1>Service Plan</h1>
+        </div>
+        <div class="service-container">
+            <div class="service-card">
+                <div class="card-head">
+                    <h2>Wordpress</h2>
+                    <p>website setup</p>
+                </div>
+                <div class="card-list">
+                    <ul>
+                        <li>Upto 8-10 pages</li>
+                        <li>SEO fiendly</li>
+                        <li>Responsive design</li>
+                        <li>24/7 Support</li>
+                        <li>7 days delivary</li>
+                    </ul>
+                </div>
+                <div class="card-action">
+                    <h3>Price $399</h3>
+                    <button>Go Next</button>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="card-head">
+                    <h2>management</h2>
+                    <p>we'll handle your website</p>
+                </div>
+                <div class="card-list">
+                    <ul>
+                        <li>add new features</li>
+                        <li>bug fixing</li>
+                        <li>technical support</li>
+                        <li>eCommerce management</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                </div>
+                <div class="card-action">
+                    <h3>Per Month $999</h3>
+                    <button>Go Next</button>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="card-head">
+                    <h2>Shopify</h2>
+                    <p>create a store
+                    <p>
+                </div>
+                <div class="card-list">
+                    <ul>
+                        <li>Upto 8-10 pages</li>
+                        <li>SEO Friendly</li>
+                        <li>Responsive design</li>
+                        <li>8-10 Days delivary</li>
+                        <li>1 year support free</li>
+                    </ul>
+                </div>
+                <div class="card-action">
+                    <h3>Price $799</h3>
+                    <button>Go Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cLIENT TESITMONAL -->
+    <section id="review">
+        <div class="r-head">
+            <h2>What client say</h2>
+        </div>
+        <div class="review-div">
+            <div class="arrow" id="arrow-1">
+                <img src="./img/arrow.webp" alt="arrow">   
+            </div>
+            <div class="client-review">
+                <div>
+                    <img src="./img/review.webp" alt="client rerview">
+                </div>
+                <div class="review-msg">
+                    <h2>The experts at
+                        family problems</h2>
+                    <p>We take to heart your needs and
+                        wishes in order to protect yourself
+                        and your family. We understand
+                        these can be some of the most
+                        difficult moments of your</p>
+                </div>
+            </div>
+
+            <div class="arrow" id="arrow-2">
+                <img src="./img/arrow.webp" alt="arrow">
+            </div>
+        </div>
+    </section>
+    <!-- contact form in website -->
+    <section id="support">
+        <div class="client-support">
+            <img src="./img/community.svg" alt="support img">
+            <h3>Client Support</h3>
+            <p>We Support Every Clent for their <br> problem in any time</p>
+        </div>
+        <div class="contact-form">
+            <form>
+                <label for="name">Name</label>
+                <input type="tel" name="name" id="name" placeholder="First Name & Last Namem">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Contac@email.com">
+                <label for="msg">Massage</label>
+                <textarea name="msg" id="msg" placeholder="What you looking for?....."></textarea>
+                <br>
+                <input type="button" value="Get Attention" class="contact-btn">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="useful-link">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">Service terms & condition</a></li>
+                <li><a href="#">Book a consultation for bit project</a></li>
+                <li><a href="#"> 24/7 support<a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">Hire me</a></li>
+            </ul>
+        </div>
+        <div class="copyrights">
+            <h3>©2022 all coppyrights by md mojahid</h3>
+            <a href="mailto:mojahid7h@gmail.com">mojahid7h@gmail.com</a>
+        </div>
+    </footer>
+    <!-- script  -->
+    <script src="main.js"></script>
 </body>
 
 </html>
