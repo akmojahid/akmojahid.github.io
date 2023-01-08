@@ -53,7 +53,7 @@ function createTask() {
 }
 
 addTodo.addEventListener('click', createTask)
-addTodo.addEventListener('keyup', (e) => {
+document.addEventListener('keyup', (e) => {
     if(e.key == "Enter"){
         createTask();
     }
