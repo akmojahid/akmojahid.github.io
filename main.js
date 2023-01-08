@@ -2,7 +2,7 @@
 const todoName = document.getElementById('todo-name');
 const todoDetails = document.getElementById('todo-details');
 document.querySelector('.today').innerHTML = dateIs();
-
+const addTodo = document.getElementById('create-todo');
 //check function
 
 function todoDone() {
@@ -31,7 +31,7 @@ function del() {
 let imoji = '🚗 🚓 🚕 🛺 🚙 🚌 🚐 👩 👨 🧑 👧 👨‍🦰 👸 😀 😁 😊 🎈 🎆 🎇 🧨 🎎 🎏 🎐 🎑 🧧 '.split(' ');
 
 //add todod
-document.getElementById('create-todo').onclick = function () {
+function createTask() {
     if (todoName.value !== '' && todoDetails.value !== '') {
         document.querySelector('.all-todo').innerHTML += ` <div class="todo">
         <div class="todo-ico">
@@ -52,8 +52,11 @@ document.getElementById('create-todo').onclick = function () {
     }
 }
 
-document.getElementById('create-todo').addEventListener('click',function(){
-
+addTodo.addEventListener('click', createTask)
+addTodo.addEventListener('keyup', (e) => {
+    if(e.key == "Enter"){
+        createTask();
+    }
 })
 
 
